@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX - Buy and Sell for free anywhere in Pakistan with OLX online classifieds</title>
+    <link rel="shortcut icon" href="./images/Olx Icon.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <section class="header">
+        <div class="px-5">
+            <a class="navbar-brand" href="#"><img src="./images/olx.png" width="40px"></a>
+            <div class="d-inline-block px-2 topicon"><i class="fa-solid fa-car px-1"></i>
+                <p class="d-inline-block">MOTORS</p>
+            </div>
+            <div class="d-inline-block px-2 topicon"><i class="fa-solid fa-building px-1"></i>
+                <p class="d-inline-block">PROPERTY</p>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-light">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto flex-wrap d-flex align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link p-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <form class="form-inline my-0 my-lg-0">
+                                <div class="form-group">
+                                    <div>
+                                        <i class="fa-solid fa-magnifying-glass my-2 ml-3"></i>
+                                    </div>
+                                    <input class="locinp form-control dropdown-toggle mr-sm-2" type="search"
+                                        placeholder="Search city, area or locality" value="Pakistan"
+                                        aria-label="Search">
+                                    <div>
+                                        <i class="fa-solid fa-angle-down mr-3"></i>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item first" href="#"><img src="./images/iconCurrentLocation.svg"
+                                            alt=""> Use
+                                        Current Location</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><img src="./images/iconLocation.svg" alt=""> See ads in
+                                        all Pakistan</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item disabled" href="#"> CHOOSE REGION</a>
+                                    <a class="dropdown-item" href="#"><img src="./images/iconLocation.svg" alt=""> Azad Kashmir, Pakistan</a>
+                                    <a class="dropdown-item" href="#"><img src="./images/iconLocation.svg" alt=""> Balochistan, Pakistan</a>
+                                    <a class="dropdown-item" href="#"><img src="./images/iconLocation.svg" alt=""> Islamabad Capital Territory, Pakistan</a>
+                                    <a class="dropdown-item" href="#"><img src="./images/iconLocation.svg" alt=""> Khyber Pakhtunkhwa, Pakistan</a>
+                                    <a class="dropdown-item" href="#"><img src="./images/iconLocation.svg" alt=""> Northern Areas, Pakistan</a>
+                                    <a class="dropdown-item" href="#"><img src="./images/iconLocation.svg" alt=""> Punjab, Pakistan</a>
+                                    <a class="dropdown-item" href="#"><img src="./images/iconLocation.svg" alt=""> Sindh, Pakistan</a>
+                                </div>
+                            </form>
+                        </a>
+                    </li>
+                    <form class="form-inline mx-lg-3 mx-md-3 my-lg-0">
+                        <div class="form-group">
+                            <input class="form-control findinp" type="search"
+                                placeholder="Find Cars, Mobile Phones and more ..." aria-label="Search">
+                            <button class="search btn my-0 my-sm-0" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                    <div class="btns d-flex align-items-center justify-content-between">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link my-0 auth" href="#">Login</a>
+                        </li>
+                        <li class="nav-item my-0 mx-1">
+                            <a class="nav-link sellbtn" href="#"><img class="btn" src="./images/iconSellBorder.svg"
+                                    alt=""><span class="sell"><img src="./images/iconPlusSell.svg" alt="">
+                                    SELL</span></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!---------- header for mobile ---------->
+    <section class="container mobHeader bg-light">
+        <nav class="navbar navbar-expand-md navbar-light px-1 bg-light border-bottom">
+
+            <a class="navbar-toggler px-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+            <div class="d-flex justify-content-between align-items-center mx-auto top">
+                <a class="navbar-brand " href="#"><img src="./images/olx.png" width="40px"></a>
+                <div class="px-1 topicon"><i class="fa-solid fa-car px-1"></i>
+                    <p class="d-inline-block m-0">MOTORS</p>
+                </div>
+                <div class="px-1 topicon"><i class="fa-solid fa-building px-1"></i>
+                    <p class="d-inline-block m-0">PROPERTY</p>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
+                <div class="container justify-content-start">
+                    <img src="./images/User Icon.png" width="50px" alt="">
+                    <p class="my-3 mx-2">Enter your account<br />
+                        Log in to your account</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="" class="nav-link border-top">
+                            <span class="icon my-1 mx-2"><i class="fa-solid fa-camera"></i></span>
+                            <p class="d-inline-block m-0">Start selling</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">
+                            <span class="icon my-1 mx-2"><i class="fa-solid fa-newspaper"></i></span>
+                            <p class="d-inline-block m-0">My ads</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">
+                            <span class="icon my-1 mx-2"><i class="fa-solid fa-comment"></i></span>
+                            <p class="d-inline-block m-0">Chat</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link border-top border-bottom">
+                            <span class="icon my-1 mx-2"><i class="fa-solid fa-circle-question"></i></span>
+                            <p class="d-inline-block m-0">Help</p>
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn btn-block btn-dark">Login</button>
+            </div>
+        </nav>
+        <li class="nav-item my-0 mx-auto position-relative">
+            <a class="nav-link sellbtn mx-auto" href="#"><img class="btn" src="./images/iconSellBorder.svg" alt=""><span
+                    class="sell mx-auto"><img src="./images/iconPlusSell.svg" alt="">
+                    SELL</span></a>
+        </li>
+        <div class="container bg-light">
+            <section>
+                <p class="m-0 py-3">
+                    <img src="./images/iconLocation.svg" alt="">
+                    Pakistan
+                </p>
+            </section>
+            <form class="form my-0 my-lg-0">
+                <div class="form-group d-flex align-items-center">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass my-2 ml-3"></i>
+                    </div>
+                    <input class="locinp form-control dropdown-toggle m-0" type="search"
+                        placeholder="All ads in Pakistan" value="" aria-label="Search">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!---------- Extra Links ---------->
+
+    <section class="morelinks">
+        <nav class=" w-100 d-flex py-3 align-items-center nav2">
+            <ul class="d-flex m-0 list-unstyled links">
+                <div class="dropdown">
+                    <button class="btn border-0 py-0 px-4 font-weight-bold nav2" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-expanded="false">
+                        ALL CATEGORIES
+                        <i class="fa-solid fa-angle-down ml-2"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-header" href="#">Mobiles</a>
+                        <a class="dropdown-item" href="#">Tablets</a>
+                        <a class="dropdown-item" href="#">Accessories</a>
+                        <a class="dropdown-item" href="#">Mobile Phones</a>
+                        <a class="dropdown-header" href="#">Vehicles</a>
+                        <a class="dropdown-item" href="#">Cars</a>
+                        <a class="dropdown-item" href="#">Cars on installments</a>
+                        <a class="dropdown-item" href="#">Cars Accessories</a>
+                        <a class="dropdown-item" href="#">Spare Parts</a>
+                        <a class="dropdown-item" href="#">Busses, Vans and Trucks</a>
+                        <a class="dropdown-item" href="#">Rikshaw and Chingchi</a>
+                        <a class="dropdown-item" href="#">Other Vehicles</a>
+                        <a class="dropdown-item" href="#">Boats</a>
+                        <a class="dropdown-item" href="#">Tracktors and Trailors</a>
+                    </div>
+                </div>
+                <li class="px-2"><a href="#">Mobile Phones</a></li>
+                <li class="px-2"><a href="#">Cars</a></li>
+                <li class="px-2"><a href="#">Motorcycles</a></li>
+                <li class="px-2"><a href="#">Houses</a></li>
+                <li class="px-2"><a href="#">TV-Video-Audio</a></li>
+                <li class="px-2"><a href="#">Tablets</a></li>
+                <li class="px-2"><a href="#">Land & Plots</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <section class="container-fluid p-0 banner">
+        <img class="align-content-center w-100 " src="./images/wallpaper2.jpg" alt="">
+    </section>
+
+
+    <section class="container-fluid mt-5">
+        <div>
+            <h3 class="ml-lg-4 ml-md-4">Fresh recommendations</h3>
+        </div>
+        <div class="row m-0 mt-3">
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/224164670-240x180.webp" class="card-img-top" height="180px" alt="...">
+                    <a href="#" class="btn btn-warning py-1 px-2 feaBtn">FEATURED</a>
+                    <div class="card-body d-flex flex-column align-content-between featured">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">AC/DC inverter / all type air conditioners</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 8,100</h5>
+                        <p class="loca m-0  pt-1">Al Hamra Town, Lahore &middot; 4 weeks ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/232108048-240x180.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Iphone 13 Pro Max Made (T)</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 29,000</h5>
+                        <p class="loca m-0  pt-4">Gulshan-e-Lahore, Lahore &middot; 13 hours ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/227153258-240x180.webp" class="card-img-top" height="180px" alt="...">
+                    <a href="#" class="btn btn-warning py-1 px-2 feaBtn">FEATURED</a>
+                    <div class="card-body d-flex flex-column align-content-between featured">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Laptop HP Notebook 15 ef2127wm AMD Ryzen5 5500U 8GB RAM 256GB ROM</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 99,999</h5>
+                        <p class="loca m-0  pt-4">University Road, Karachi &middot; 3 weeks ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/232108924-240x180.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">I need a driver</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 12,000 - 15,000 | Monthly</h5>
+                        <p class="loca m-0  pt-4">Quetta &middot; 13 hours ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/225968308-240x180.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Epson L3110 all in one printer</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 26,500</h5>
+                        <p class="loca m-0  pt-4">Sheikhupura &middot; 6 days ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/225753331-240x180.webp" class="card-img-top" height="180px" alt="...">
+                    <a href="#" class="btn btn-warning py-1 px-2 feaBtn">FEATURED</a>
+                    <div class="card-body d-flex flex-column align-content-between featured">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">1 Kanal Prime Location near to main Gate Plot for sale</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 15,900,000</h5>
+                        <p class="loca m-0 pt-2">Bahria Orchard, Lahore &middot; 1 week ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/232109553-240x180.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Room available fully furnished separate</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 65,000</h5>
+                        <p class="loca m-0  pt-2">DHA Phase 2, Karachi &middot; 13 hours</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/225223967-240x180.webp" class="card-img-top" height="180px" alt="...">
+                    <a href="#" class="btn btn-warning py-1 px-2 feaBtn">FEATURED</a>
+                    <div class="card-body d-flex flex-column align-content-between featured">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Mercedes, RollsRoyce, Prado, Audi, V8 Available for rent in Islamabad
+                            </p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <!-- <h5 class="card-text"></h5> -->
+                        <p class="loca m-0 pt-3">G-10, Islamabad &middot; 2 weeks ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/232110040-240x180.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Iphone 8 plus 64gb full box 10/10 PTA Approved</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs, 58,000</h5>
+                        <p class="loca m-0  pt-3">Multan &middot; 13 hours ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/216957228-240x180.webp" class="card-img-top" height="180px" alt="...">
+                    <a href="#" class="btn btn-warning py-1 px-2 feaBtn">FEATURED</a>
+                    <div class="card-body d-flex flex-column align-content-between featured">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">OnePlus 9R 12GB 256GB Box Pack</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 67,999</h5>
+                        <p class="loca m-0 pt-3">Hall Road, Lahore &middot; 4 days ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/232111024-400x300.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">12V Mercedes-Benz AMG GTR Kids Ride on Car with Remote Control</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 24,500</h5>
+                        <p class="loca m-0  pt-2">Gulberg 3, Lahore &middot; 13 hours</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/200713491-240x180.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Steel Series Ikari Laser Pro Gaming Mouse 3200dpi</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 2,500</h5>
+                        <p class="loca m-0  pt-4">Gulberg 3, Lahore &middot; 13 hours ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/232111655-400x300.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Iphone 7 Plus Non PTA</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 26,500</h5>
+                        <p class="loca m-0  pt-4">Gujranwala &middot; 13 hours ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/232112086-240x180.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Macbook Air M1 (8GB+512GB)</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 200,000</h5>
+                        <p class="loca m-0  pt-4">Gulberg 3, Lahore &middot; 13 hours ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/230587403-240x180.webp" class="card-img-top" height="180px" alt="...">
+                    <a href="#" class="btn btn-warning py-1 px-2 feaBtn">FEATURED</a>
+                    <div class="card-body d-flex flex-column align-content-between featured">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Holland lop pet Rabbit</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 16,000</h5>
+                        <p class="loca m-0 pt-3">Thokar Niaz Baig, Lahore &middot; 5 days ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/228110982-240x180.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Butterfly Koi Fish</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 625</h5>
+                        <p class="loca m-0  pt-4">Dharampura, Lahore &middot; 13 hours ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/231824884-240x180.webp" class="card-img-top" height="180px" alt="...">
+                    <a href="#" class="btn btn-warning py-1 px-2 feaBtn">FEATURED</a>
+                    <div class="card-body d-flex flex-column align-content-between featured">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Toyota Corolla SE Saloon</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 1,250,000</h5>
+                        <p class="loca m-0 pt-3">400,000 km &middot; 2004<br />I-10, Islamabad &middot; 4days ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/232113076-240x180.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">Pack of 3 wifi ip Camera</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 15,500</h5>
+                        <p class="loca m-0  pt-4">Firdos Colony, Karachi &middot; 13 hours ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/227078379-240x180.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">1 Kanal Luxury Upper Portion for Rent in Phase 6</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 125,000</h5>
+                        <p class="loca m-0  pt-4">DHA Phase 6, Lahore &middot; 3 weeks ago</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img src="./images/232046908-240x180.webp" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-content-between">
+                        <div class="d-flex flex-row justify-content-between">
+                            <p class="card-title">IPhone 7 plus 128gb PTA approved 0325=7593=929</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h5 class="card-text">Rs 125,000Rs 36,500</h5>
+                        <p class="loca m-0  pt-4">Gujranwala &middot; 14hours ago</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <section class="w-100 mb-5 d-flex justify-content-center loadBtn">
+        <button class="btn my-2">
+            Load more
+        </button>
+    </section>
+
+    <section class="container py-0 px-3 mobAds">
+        <img src="./images/ads.webp" alt="">
+    </section>
+
+
+    <!--------------- Footer --------------->
+
+    <footer class="containerfluid p-0">
+        <section class="row f1 m-0 flex-wrap olxApp">
+            <div class="cont1 col-lg-4">
+                <img src="./images/olxMobileApp.webp" alt="">
+            </div>
+            <div class="cont2 my-5 px-5 col-lg-4">
+                <h3 class="font-weight-bold">
+                    TRY THE OLX APP
+                </h3>
+                <p>
+                    Buy, sell and find just about anything using the App on your mobile.
+                </p>
+            </div>
+            <div class="cont3 py-5 pl-5 col-lg-4 yourApp">
+                <p class="font-weight-bold head">GET YOUR APP TODAY</p>
+                <a href="#"><img src="./images/iconAppStore.svg" alt=""></a>
+                <a href=""><img src="./images/iconGooglePlay.svg" alt=""></a>
+                <a href=""><img src="./images/iconAppGallery.svg" alt=""></a>
+            </div>
+        </section>
+
+
+        <section class="d-flex f2">
+            <div class="d-flex justify-content-between py-3 px-5 col-lg-8 col-md-8 col-sm-12 lists flex-wrap">
+                <ul class="list-unstyled">
+                    <li class="font-weight-bold mb-1 head">POPULAR CATEGORIES</li>
+                    <li><a href="">Cars</a></li>
+                    <li><a href="">Flats for rent</a></li>
+                    <li><a href="">Mobile Phones</a></li>
+                    <li><a href="">Jobs</a></li>
+                </ul>
+                <ul>
+                    <li class="font-weight-bold mb-1 head">TRENDING SEARCHES</li>
+                    <li><a href="">Bikes</a></li>
+                    <li><a href="">Watches</a></li>
+                    <li><a href="">Books</a></li>
+                    <li><a href="">Dogs</a></li>
+                </ul>
+                <ul>
+                    <li class="font-weight-bold mb-1 head">ABOUT US</li>
+                    <li><a href="">About EMPG</a></li>
+                    <li><a href="">OLX Blog</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">OLX for Businesses</a></li>
+                </ul>
+                <ul>
+                    <li class="font-weight-bold mb-1 head">OLX</li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Sitemap</a></li>
+                    <li><a href="">Terms of use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-0 follow">
+            </div>
+
+            <div class="col-lg-3 d-flex flex-column justify-content-between col-lg-1 follow">
+                <section>
+                    <p class="font-weight-bold pt-3 head">Follow Us</p>
+                    <ul class="d-flex icons m-0 p-0">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-play"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </section>
+                <section class="mb-4 justify-content-around">
+                    <a href=""><img class="w-25" src="./images/iconAppStore.svg" alt=""></a>
+                    <a href=""><img class="w-25" src="./images/iconGooglePlay.svg" alt=""></a>
+                    <a href=""><img class="w-25" src="./images/iconAppGallery.svg" alt=""></a>
+                </section>
+            </div>
+
+        </section>
+
+
+        <!--------------- Footer for Mobile --------------->
+        <div class="mobScreen my-3">
+            <div>
+                <p>
+                    <a href="">Categories</a>
+                </p>
+                <p>
+                    <a><i class="fa-solid fa-angle-right"></i></a>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <a href="">Popular Categories</a>
+                </p>
+
+                <p>
+                    <a><i class="fa-solid fa-angle-right"></i></a>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <a href="">Trending Searches</a>
+                </p>
+
+                <p>
+                    <a><i class="fa-solid fa-angle-right"></i></a>
+                </p>
+            </div>
+            <div>
+                <p><a href="">About Us</a></p>
+
+                <p>
+                    <a><i class="fa-solid fa-angle-right"></i></a>
+                </p>
+            </div>
+            <div>
+                <p><a href="">Olx</a></p>
+
+                <p>
+                    <a><i class="fa-solid fa-angle-right"></i></a>
+                </p>
+            </div>
+            <div class="border-bottom">
+                <p><a href="">Follow Us</a></p>
+                <ul class="d-flex icons my-auto">
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-play"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <section class="my-4 mx-auto px-2">
+                <a href=""><img class="w-25" src="./images/iconAppStore.svg" alt=""></a>
+                <a href=""><img class="w-25" src="./images/iconGooglePlay.svg" alt=""></a>
+                <a href=""><img class="w-25" src="./images/iconAppGallery.svg" alt=""></a>
+            </section>
+        </div>
+
+        <section class="m-0 py-3 px-4 d-flex justify-content-end lastbox">
+            <p class="font-weight-bold m-0 p-1">
+                Free Classifieds in Pakistan
+            </p>
+            <p class="m-0 p-1">
+                . &copy; 2006-2002 OLX
+            </p>
+        </section>
+    </footer>
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+
+</html>

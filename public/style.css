@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-Regular.479970ffb74f2117317f9d24d9e317fe.woff2);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-Bold.2735a3a69b509faf3577afd25bdf552e.woff2);
+    font-weight: bold;
+}
+nav {
+    padding: 5px 30px !important;
+    position: relative;
+}
+.topicon:hover {
+    color: #3A77FF;
+}
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #F7F8F8;
+}
+.nav2 {
+    font-size: 14px;
+}
+li {
+    list-style: none;
+}
+p {
+    font-size: 14px;
+}
+a {
+    /* font-size: 12px; */
+    color: #000000;
+    text-decoration: none;
+}
+.form-group {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.form-group .locinp {
+    width: 165px;
+    border: none;
+}
+.dropdown-menu {
+    font-size: 14px;
+}
+.dropdown-menu a {
+    margin: 10px 0;
+}
+.dropdown-menu .first {
+    color: #3A77FF;
+}
+input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+.form-group:focus, .form-group:active {
+    border: 1px solid cyan;
+}
+.form-group input:focus, .form-group input:active, .form-group button {
+    box-shadow: none !important;
+}
+.findinp {
+    width: 650px !important;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+.search {
+    color: #ffffff;
+    background-color: #002F34;
+    border-radius: 0 5px 5px 0;
+}
+.search:hover {
+    color: #ffffff;
+}
+.auth {
+    color: #000000 !important;
+    font-weight: bold;
+    text-decoration: underline 2px solid #000000;
+    font-size: 16px;
+}
+.auth:hover {
+    content: " ";
+    text-decoration: none;
+}
+.sellbtn {
+    position: relative;
+}
+.sell {
+    position: absolute;
+    top: 22px;
+    left: 32px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+}
+.sellbtn .btn {
+    padding: 0;
+    border-radius: 30px;
+    box-shadow: 0 0 3px grey;
+    /* border: 1px solid blue; */
+}
+.btns {
+    width: 200px;
+    /* border: 1px solid grey; */
+}
+.links {
+    overflow-x: scroll;
+    overflow: auto;
+    white-space: nowrap;
+}
+.links a, .links button {
+    font-size: 14px;
+}
+.links::-webkit-scrollbar {
+    display: none;
+}
+.morelinks i {
+    font-size: 20px;
+}
+.container-fluid {
+    /* border: 1px solid grey; */
+}
+.f1 {
+  background-color: #F7F8F8;
+}
+.head {
+    font-size: 14px;
+    color: #002F34;
+}
+.feaBtn {
+    position: absolute;
+    top: 147px;
+    left: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.featured {
+    border-left: 6px solid #FFCE32;
+}
+.card p, .card i {
+    font-size: 16px;
+}
+.card h5 {
+    font-weight: bold;
+}
+.card .loca {
+    font-size: 12px;
+    color: grey;
+}
+.loadBtn button {
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #000000 !important;
+}
+.cont2 {
+    border-right: 2px solid lightgrey;
+}
+.yourApp img {
+    width: 120px;
+}
+.mobScreen, .mobHeader, .mobAds {
+    display: none;
+}
+.lists a {
+    font-size: 12px;
+    color:  grey;
+}
+.lists a:hover {
+    color: #002F34;
+    text-decoration: none;
+}
+.icons i {
+    font-size: 12px;
+    color: #002F34;
+}
+.icons li {
+    padding: 1px 8px;
+    margin: 0 10px 0 0;
+    border: 1px solid #002F34;
+    border-radius: 50%;
+}
+
+.f2 {
+    border-top: 2px solid lightgrey;
+    background-color: #EBEEEF;
+}
+.lastbox {
+    color: #ffffff;
+    background-color: #002F34;
+}
+.lastbox p {
+    font-size: 12px;
+}
+
+/* Media Queries for large Screen Size */
+@media only screen and (max-width: 1150px) {
+    .findinp {
+        width: 500px !important;
+    }
+}
+
+/* Media Queries for Medium Screen Size */
+
+@media only screen and (max-width: 768px) {
+    .findinp {
+        width: 300px !important;
+    }
+    .follow {
+        display: none !important; 
+    }
+}
+
+
+/* Media Queries for Small Screen Size */
+
+@media only screen and (max-width: 576px) {
+    
+    .olxApp, .header {
+        display: none;
+    }
+    .f2 {
+        display: none !important;
+    }
+    .mobHeader {
+        display: contents;
+    }
+    a.navbar-toggler {
+        border: none;
+    }
+    .collapse, .collapse p, .collapse i {
+        color: rgb(73, 73, 73);
+    }
+    .top {
+        width: 80%;
+    }
+    .sellbtn {
+        position: fixed;
+        bottom: 30px;
+        right: 10px;
+        margin: 0 auto;
+        z-index: 1;
+    }
+    .banner {
+        display: none;
+    }
+    .nav2 {
+        padding: 0 10px !important;
+    }
+    .mobScreen {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobScreen div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid lightgrey;
+    }
+    .mobScreen p {
+        margin: 15px 10px;
+    }
+    .icons li {
+        padding: 1px 8px;
+        margin-right: 10px;
+    }
+    .lastbox {
+        justify-content: center !important;
+        padding: 10px !important;
+    }
+    .mobAds {
+        display: block;
+    }
+    .mobAds img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    
+    .card {
+        width: 16rem !important;
+    }
+    .container-fluid h3 {
+        font-size: 24px;
+    }
+}

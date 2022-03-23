@@ -127,9 +127,9 @@ input::-webkit-search-cancel-button {
 .morelinks i {
     font-size: 20px;
 }
-.container-fluid {
-    /* border: 1px solid grey; */
-}
+/* .container-fluid {
+    border: 1px solid grey;
+} */
 .f1 {
   background-color: #F7F8F8;
 }
@@ -147,6 +147,14 @@ input::-webkit-search-cancel-button {
 .featured {
     border-left: 6px solid #FFCE32;
 }
+/* .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+p.loca {
+    justify-content: baseline;
+} */
 .card p, .card i {
     font-size: 16px;
 }
